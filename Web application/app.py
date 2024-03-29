@@ -11,8 +11,8 @@ app = Flask(__name__)
 model = tf.keras.models.load_model('model/model.h5')
 
 # Load dataset
-dataset = pd.read_csv('datasets/dataset.csv')
-books_dataset = pd.read_csv('datasets/books_dataset.csv')
+dataset = pd.read_csv('dataset.csv')
+books_dataset = pd.read_csv('books_dataset.csv')
 
 # Function to recommend books for a given user_id
 def recommend_books_id(user_id):
